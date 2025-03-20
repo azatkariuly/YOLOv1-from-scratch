@@ -31,11 +31,11 @@ LEARNING_RATE = 2e-5
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 BATCH_SIZE = 4
 WEIGHT_DECAY = 0
-EPOCHS = 20
+EPOCHS = 5
 NUM_WORKERS = 2
 PIN_MEMORY = True
 LOAD_MODEL = False
-LOAD_MODEL_FILE = "overfit.pth.tar"
+LOAD_MODEL_FILE = "/content/drive/MyDrive/overfit.pth.tar"
 
 files_dir = 'data/train'
 test_dir = 'data/test'

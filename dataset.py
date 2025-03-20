@@ -74,7 +74,6 @@ class FruitImagesDataset(torch.utils.data.Dataset):
                 boxwidth = (xmax - xmin) / img_width
                 boxheight = (ymax - ymin) / img_height
             
-            
                 boxes.append([klass, centerx, centery, boxwidth, boxheight])
             
         elif(int(root.find('size').find('height').text) != 0):
@@ -156,4 +155,5 @@ class FruitImagesDataset(torch.utils.data.Dataset):
                 # Set one hot encoding for class_label
                 label_matrix[i, j, class_label] = 1
 
+        # print('append', image, label_matrix)
         return image, label_matrix
