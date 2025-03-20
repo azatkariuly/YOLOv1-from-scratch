@@ -11,4 +11,5 @@ model = YOLOv1(split_size=7, num_boxes=2, num_classes=3).to(DEVICE)
 optimizer = optim.Adam(
         model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY
     )
-load_checkpoint('overfit.pth.tar', model, optimizer)
+# load_checkpoint('overfit.pth.tar', model, optimizer)
+model.load_state_dict('overfit.pth.tar')
