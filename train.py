@@ -29,7 +29,7 @@ torch.manual_seed(seed)
 # Hyperparameters etc. 
 LEARNING_RATE = 2e-5
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-BATCH_SIZE = 4
+BATCH_SIZE = 8
 WEIGHT_DECAY = 0
 EPOCHS = 5
 NUM_WORKERS = 2
