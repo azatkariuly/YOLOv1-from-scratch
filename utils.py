@@ -323,7 +323,7 @@ def convert_cellboxes(predictions, S=7, C=3):
 
     return converted_preds
 
-def cellboxes_to_boxes(out, S=3):
+def cellboxes_to_boxes(out, S=7):
     converted_pred = convert_cellboxes(out).reshape(out.shape[0], S * S, -1)
     converted_pred[..., 0] = converted_pred[..., 0].long()
     all_bboxes = []
