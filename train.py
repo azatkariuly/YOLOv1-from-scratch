@@ -35,7 +35,7 @@ EPOCHS = 5
 NUM_WORKERS = 2
 PIN_MEMORY = True
 LOAD_MODEL = False
-LOAD_MODEL_FILE = "/content/drive/MyDrive/overfit.pth.tar"
+LOAD_MODEL_FILE = "/content/drive/MyDrive/overfit.pt"
 
 files_dir = 'data/train'
 test_dir = 'data/test'
